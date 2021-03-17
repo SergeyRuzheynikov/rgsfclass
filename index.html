@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<!-- <script>
+	loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script> -->
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+	
+		<link rel="stylesheet" href="css/main.min.css"></noscript>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+	<script type="text/javascript">
+ 
+$(document).ready(function(){
+	$("#navigation").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+
+
+
+
+
+
+});
+</script>
+
+
+
+</head>
+
+<body>
+    	<a href="/mail.php">Программа "Первый класс"</a>
+	<div class="header">
+		<div class="container">
+			<button class="btn-menu"><img src="img/btn-menu.png" alt=""></button>
+
+			<div class="logo">
+				<a href="#"> <b>РГС</b>
+					жизнь
+				</a>
+			</div>
+
+			<nav id="navigation">
+				<ul>
+					<li>
+						<a href="#">Программа "Первый класс"</a>
+					</li>
+					<li>
+						<a href="#">Риски и выплаты</a>
+					</li>
+					<li>
+						<a href="#">Вопросы и ответы</a>
+					</li>
+					<li>
+						<a href="#call-form">Оставить заявку</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="logo2"></div>
+		</div>
+
+	</div>
+
+	<div class="main">
+		<div class="container">
+
+			<div class="title-block">
+				<p>"Первый класс"</p>
+				<h1>Накопите первокласснику крупную сумму к Новому году</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="fclass">
+		<div class="container">
+			<div class="title-block">
+				<h2>"Первый класс"</h2>
+				<span>Накопительная страховая к выпуску из школы</span>
+			</div>
+
+			<div class="imgblock tablet" ></div>
+
+			<div class="text-block">
+				<h3>Как накопить первокласснику крупную сумму к выпускному?</h3>
+				<div class="divider"></div>
+				<p>
+					Мы пока можем только догадываться, кем захочет стать Ваш ребенок во взрослой жизни.  Адвокатом? Пилотом? Врачом? Время летит быстро. Вы и не заметите, как скоро первоклассник вырастет.
+				</p>
+				<p>
+					Нам, как ответственным родителям, важно позаботиться заранее о том, чтобы у нас были деньги на реализацию его планов и выход в жизнь.
+				</p>
+				<p>
+					Накопить крупную сумму и одновременно защитить малыша на случай множества рисков позволяют накопительные страховые программы.
+				</p>
+			</div>
+
+			<div class="imgblock desktop"></div>
+
+		</div>
+
+	</div>
+
+	<div class="how-work">
+		<div class="container">
+
+
+		 <div class="title-block">
+				<h2>Программа «Забота о будущем: Комфорт. Первый класс»</h2>
+				<p>
+					Мы подготовили для Вас программу «Первый класс», нацеленную на создание накоплений для первоклассника к его выпускному году и максимальную финансовую защиту на случай непредвиденных событий и препятствий на пути во взрослую жизнь.
+			
+				</p>
+			</div>
+			
+			<div class="title-block">
+				<h3>Как это работает?</h3>
+				<div class="divider"></div>
+			</div>
+			
+				<div class="title-block  tb1">
+				<div class="step">
+					Вы заключаете договор страхования на необходимую вам сумму и выплачиваете небольшие взносы в выбранный срок действия договора. 
+				</div>
+				<div class="step">
+					Выбирайте периодичность платежей по желанию: раз в квартал, раз в полгода или раз в год.
+				</div>
+				<div class="step">
+					В конце срока действия вы получаете всю оговоренную сумму.
+				</div>
+				<div class="step">
+					Весь срок действия договора ребенок защищен страховой компанией, выплачивающей деньги в случае наступления экстренной ситуации (страхового риска), указанной в договоре.
+				</div>
+			</div>
+			
+				<div class="title-block tb1">
+			
+			<div class="about" id="about1">
+				<div class="img"></div>
+				<div class="text">
+					<span>C этой суммой все дороги мне открыты!</span>
+				</div>
+			</div>
+			
+			<div class="about" id="about2">
+				<div class="img"></div>
+				<div class="text">
+					<span>Мои родители застраховали меня в <b>РГС-Жизнь</b></span>
+				</div>
+			</div>
+				</div>
+			
+				<div class="title-block">
+				<div class="graphic"></div>
+			
+				</div>
+			
+				<div class="title-block">
+			<div class="garant">
+				<div>
+					<h4>Защита на случай экстренных ситуаций</h4>
+					<span>
+						В конце срока действия вы получаете всю оговоренную сумму.
+					</span>
+				</div>
+				</div>
+			
+				</div>
+			
+			
+				<div class="title-block">
+				<div class="arrow">
+					
+					2017 год &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2027 год
+				</div>
+			
+					</div>
+			 
+
+
+	</div>
+	</div><div class="params-pr">
+	
+	<div class="container">
+	
+	
+		
+			<div class="title-block tb1">
+				<h2>Параметры программы</h2>
+				<div class="divider"></div>
+			</div>
+	
+			<div class="param">
+				<div class="img"></div>
+				<h5>Срок страхования</h5>
+				<span>10 лет</span>
+			</div>
+			<div class="param">
+				<div class="img"></div>
+				<h5>Застрахованный</h5>
+				<span>от 3 лет до 21 года (на момент окончания действия договора)
+				</span>
+			</div>
+			<div class="param">
+				<div class="img"></div>
+				<h5>Страхователь</h5>
+				<span>от 18 до 75 лет (на момент окончания договора)</span>
+			</div>
+			<div class="param">
+				<div class="img"></div>
+				<h5>Валюта договора</h5>
+				<span>Рубли РФ</span>
+			</div>
+		
+		</div>
+	</div>
+	
+	<div class="risks">
+		<div class="container">
+			<h2>Риски и выплаты</h2>
+			<div class="divider"></div>
+			<ul>
+				<li>Дожитие Застрахованного</li>
+				<li> Смерть Застрахованного по любой причине</li>
+				<li>Установление Застрахованному категории "ребенок-инвалид" или I, II, III</li>
+				<li>Группы инвалидности в результате последствий несчастного случая</li>
+				<li>Телесные повреждения (травмы, острые отравления) в результате несчастного случая</li>
+				<li>Первичное диагностирование у Застрахованного смертельно опасного заболевания</li>
+			</ul>
+			<p>
+				Перечень документов для получения страховых выплат, условия прекращения действия договора и другую детальную информацию вы можете узнать, ознакомившись с полной версией программы страхования.
+			</p>
+		</div>
+	</div>
+	
+	 	<div class="q-answers">
+	<div class="container">
+		<h2>Вопросы и ответы</h2>
+		<div class="divider"></div>
+		<ul >
+			<li>
+				Мы предлагаем несколько способов оплаты страховых взносов. выберите удобный способ оплаты
+			</li>
+			<li>
+				Отвечаем на самые частые вопросы о страховании жизни</li>
+		</ul>
+		<p>Остались вопросы? Позвоните нам:</p>
+		<span>8 800 100 31 85</span>
+	</div>
+	</div>
+
+	 <div class="callback" id="call-form" >
+	
+<div class="container">
+	  <div class="lcol">
+		 				<h2>Оставьте заявку</h2>
+		 				<div class="divider"></div>
+		 				<p>
+		 					Финансовые консультанты РГС-Жизнь могут рассказать о накопительных программах страхования для детей в вашей школе! Оставьте заявку онлайн и мы свяжемся с Вами и договоримся с руководством школы
+		 				</p>
+		 			</div> 
+	 <div class="rcol">
+	 				<h3>Пригласите нас в свою школу</h3>
+	 	<form action="#">
+	 		<input type="text" placeholder="Ваше имя" class="name">
+	 		<input type="text" placeholder="Номер телефона" class="phone">
+	 		<input type="text"  placeholder="Ваш город" class="city">
+	 		<input type="text" placeholder="Номер школы"  class="nschool">
+	 		<button class="sender">Отправить заявку</button>
+	 	</form>
+	 			</div>  
+</div>
+	</div>
+	
+	<div class="footer">
+		<div class="container">
+			<div class="logo">
+				<a href="#"> <b>РГС</b>
+					жизнь
+				</a>
+			</div>
+	
+			<div class="rekvizits">
+				<span>ООО "СК "РГС-Жизнь"</span>
+				<span>г. Москва, ул. Б. Ордынка, дом 40, стр 3</span>
+			</div>
+	
+			<div class="licence">
+				<h3>Информация о лицензии</h3>
+				<span>
+					Лицензия СЖ №3984 от 10.04.2015
+					<br>Лицензия СЖ №3984 от 10.04.2015, бессрочные</span>
+				<span>Решение о предоставлении лицензии от 10.11.2005</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+
+
+
+
+
+</body>
+</html>
